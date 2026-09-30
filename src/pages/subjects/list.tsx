@@ -13,6 +13,11 @@ import {ColumnDef} from "@tanstack/react-table";
 import {Badge} from "@/components/ui/badge.tsx";
 
 
+/**
+ * Renders the subject table with name search, department selection, and a create action.
+ * Passes filtering, sorting, and pagination options to the data provider.
+ * @returns The subject list page.
+ */
 const SubjectList = () => {
     const [ searchQuery, setSearchQuery ] = useState("")
     const [selectDepartment, setSelectDepartment ] = useState('all')

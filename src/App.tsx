@@ -27,6 +27,10 @@ import {BookOpen, HomeIcon} from "lucide-react";
 import SubjectList from "@/pages/subjects/list.tsx";
 import SubjectCreate from "@/pages/subjects/create.tsx";
 
+/**
+ * Configures the application providers and dashboard, subject list, and subject creation routes.
+ * @returns The application component tree with the shared layout and theme.
+ */
 function App() {
   return (
     <BrowserRouter>
