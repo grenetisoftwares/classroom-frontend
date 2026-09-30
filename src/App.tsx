@@ -25,6 +25,7 @@ import "./App.css";
 import Dashboard from "@/pages/dashboard.tsx";
 import {BookOpen, HomeIcon} from "lucide-react";
 import SubjectList from "@/pages/subjects/list.tsx";
+import SubjectCreate from "@/pages/subjects/create.tsx";
 
 function App() {
   return (
@@ -45,7 +46,7 @@ function App() {
                 {
                   name: 'dashboard',
                   list: '/',
-                  meta: {icon: <HomeIcon />, label: "Dashboard"}
+                  meta: {icon: <HomeIcon />, label: "Home"}
                 },
                 {
                   name: 'subjects',
@@ -64,7 +65,7 @@ function App() {
                 <Route path={"/"} element={<Dashboard />} />
                 <Route path={'/subjects'}>
                   <Route index element={<SubjectList />} />
-                  <Route path={'/subjects/create'} />
+                  <Route path={'/subjects/create'}  element={<SubjectCreate />}/>
                 </Route>
                 </Route>
               </Routes>
